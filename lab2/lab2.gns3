@@ -239,7 +239,7 @@
                     "idlepc": "0x6369e0b4",
                     "idlesleep": 30,
                     "image": "c7200-adventerprisek9-mz.152-4.M7.unpacked.bin",
-                    "image_md5sum": "1a698eb389ef23f46286211215711705",
+                    "image_md5sum": "9c7cc9b3f3b3571411a7f62faaa2c036",
                     "mac_addr": "ca01.56f8.0000",
                     "midplane": "vxr",
                     "mmap": true,
@@ -308,7 +308,7 @@
                     "idlepc": "0x6369e0b4",
                     "idlesleep": 30,
                     "image": "c7200-adventerprisek9-mz.152-4.M7.unpacked.bin",
-                    "image_md5sum": "1a698eb389ef23f46286211215711705",
+                    "image_md5sum": "9c7cc9b3f3b3571411a7f62faaa2c036",
                     "mac_addr": "ca02.5708.0000",
                     "midplane": "vxr",
                     "mmap": true,
@@ -377,7 +377,7 @@
                     "idlepc": "0x6369e0b4",
                     "idlesleep": 30,
                     "image": "c7200-adventerprisek9-mz.152-4.M7.unpacked.bin",
-                    "image_md5sum": "1a698eb389ef23f46286211215711705",
+                    "image_md5sum": "9c7cc9b3f3b3571411a7f62faaa2c036",
                     "mac_addr": "ca03.5718.0000",
                     "midplane": "vxr",
                     "mmap": true,
@@ -446,7 +446,7 @@
                     "idlepc": "0x6369e0b4",
                     "idlesleep": 30,
                     "image": "c7200-adventerprisek9-mz.152-4.M7.unpacked.bin",
-                    "image_md5sum": "1a698eb389ef23f46286211215711705",
+                    "image_md5sum": "9c7cc9b3f3b3571411a7f62faaa2c036",
                     "mac_addr": "ca04.5728.0000",
                     "midplane": "vxr",
                     "mmap": true,
@@ -545,5 +545,5 @@
     "type": "topology",
     "variables": null,
     "version": "2.2.14",
-    "zoom": 100
+    "zoom": 202
 }
