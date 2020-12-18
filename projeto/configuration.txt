@@ -1,0 +1,19 @@
+Como proceder após o download do ficheiro .zip na máquina virtual:
+
+1º Extrair todos os ficheiros que estão dentro do zip para a Desktop;
+
+2º Abrir o terminal na Desktop e introduzir o comando "sudo mv extensions.conf /etc/asterisk/" de modo a mover o ficheiro "extensions.conf" para a directoria do Asterisk;
+
+3º Colocar o ficheiro AGI "script.agi" na directoria dos Documents "/home/rsi/Documents/";
+
+4º Confirmar que o ficheiro AGI "googletts.agi" se encontra na directoria "/home/rsi/zaf-asterisk-googletts-5566ddc/";
+
+5º Verificar se há permissão de leitura e escrita em ficheiros da diretoria do Asterisk bem como em outros utilizados; 
+
+5º Aceder à linha de comandos do Asterisk no terminal e entrar como sudo através de "sudo asterisk -vvvr";
+
+6º Escrever "dialplan reload" no terminal do Asterisk para atualizar as alterações;
+
+7º Abrir o Linphone no Windows ou na Máquina Virtual e ligar ao "90002" e testar o funcionamento do menu IVR.
+
+

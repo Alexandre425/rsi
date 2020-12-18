@@ -1,0 +1,40 @@
+Oct 30 14:03:03.541 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Oct 30 14:03:03.547 HYPERVISOR: Started on IP = localhost, TCP port = 60774.
+Oct 30 14:03:03.995 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 30 14:03:03.995 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\admin\Desktop\rsi\lab3_parte3\project-files\dynamips 
+Oct 30 14:03:03.995 GENERAL: working_dir=C:\Users\admin\Desktop\rsi\lab3_parte3\project-files\dynamips
+Oct 30 14:03:03.995 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\admin\Desktop\rsi\lab3_parte3\project-files\dynamips\c915ee64-5cd6-4f92-83fe-f761c12fa077 
+Oct 30 14:03:03.995 GENERAL: working_dir=C:\Users\admin\Desktop\rsi\lab3_parte3\project-files\dynamips\c915ee64-5cd6-4f92-83fe-f761c12fa077
+Oct 30 14:03:03.995 HYPERVISOR: exec_cmd: vm create PC4 8 c7200 
+Oct 30 14:03:03.995 VM: VM PC4 created.
+Oct 30 14:03:03.995 HYPERVISOR: exec_cmd: vm set_con_tcp_port PC4 5008 
+Oct 30 14:03:03.995 HYPERVISOR: exec_cmd: c7200 get_mac_addr PC4 
+Oct 30 14:03:03.995 HYPERVISOR: exec_cmd: vm get_status PC4 
+Oct 30 14:03:03.995 HYPERVISOR: exec_cmd: vm slot_add_binding PC4 0 0 C7200-IO-FE 
+Oct 30 14:03:03.995 HYPERVISOR: exec_cmd: vm set_disk0 PC4 0 
+Oct 30 14:03:03.995 HYPERVISOR: exec_cmd: vm set_exec_area PC4 64 
+Oct 30 14:03:04.011 HYPERVISOR: exec_cmd: vm get_status PC4 
+Oct 30 14:03:04.011 HYPERVISOR: exec_cmd: vm set_idle_pc PC4 0x608927c0 
+Oct 30 14:03:04.011 HYPERVISOR: exec_cmd: vm set_ios PC4 C:/Users/admin/GNS3/images/IOS/c7200-a3jk9s-mz.124-25g.image 
+Oct 30 14:03:04.011 HYPERVISOR: exec_cmd: c7200 set_mac_addr PC4 ca08.0d6c.0000 
+Oct 30 14:03:04.011 HYPERVISOR: exec_cmd: vm set_nvram PC4 512 
+Oct 30 14:03:08.150 HYPERVISOR: exec_cmd: nio create_udp udp-86f25349-b0fc-4a2a-952d-aadc051ed85b 10044 127.0.0.1 10045 
+Oct 30 14:03:08.467 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PC4 0 0 udp-86f25349-b0fc-4a2a-952d-aadc051ed85b 
+Oct 30 14:03:08.467 HYPERVISOR: exec_cmd: vm get_status PC4 
+Oct 30 14:03:22.292 HYPERVISOR: exec_cmd: vm set_ghost_status PC4 2 
+Oct 30 14:03:22.292 HYPERVISOR: exec_cmd: vm set_ghost_file PC4 C:\Users\admin\Desktop\rsi\lab3_parte3\project-files\dynamips\c7200-a3jk9s-mz.124-25g.image-256.ghost 
+Oct 30 14:03:22.294 HYPERVISOR: exec_cmd: vm get_status PC4 
+Oct 30 14:03:22.294 HYPERVISOR: exec_cmd: vm set_config PC4 configs\i8_startup-config.cfg 
+Oct 30 14:03:22.294 HYPERVISOR: exec_cmd: vm start PC4 
+Oct 30 14:04:04.279 HYPERVISOR: exec_cmd: vm extract_config PC4 
+Oct 30 14:10:02.343 HYPERVISOR: exec_cmd: vm get_status PC4 
+Oct 30 14:10:02.344 HYPERVISOR: exec_cmd: vm stop PC4 
+Oct 30 14:10:02.583 VM: VM PC4 shutdown.
+Oct 30 14:10:02.590 HYPERVISOR: exec_cmd: vm extract_config PC4 
+Oct 30 14:10:02.841 HYPERVISOR: exec_cmd: vm get_status PC4 
+Oct 30 14:10:02.844 HYPERVISOR: exec_cmd: vm extract_config PC4 
+Oct 30 14:10:02.856 HYPERVISOR: exec_cmd: vm delete PC4 
+Oct 30 14:10:02.856 VM: VM PC4 destroyed.
+Oct 30 14:10:02.877 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 30 14:10:02.974 HYPERVISOR: Stopped.
+Oct 30 14:10:02.974 GENERAL: reset done.

@@ -1,0 +1,37 @@
+#!/usr/bin/python3
+
+import sys
+import requests
+from datetime import date
+from asterisk.agi import *
+
+agi = AGI()
+
+flight_number = sys.argv[1]  # Change this to get the flight you want
+
+url = f"http://www.aeroportolisboa.pt/en/flights_proxy?flight={flight_number}&day=%0A%2B%2B%2B%2B%2B%2B%2B%2B%2B%2B%2B%2B%2B%2B%2B%2B%2B%2B%2B%2BToday&hour=--%3A--&city=&airline=&movtype=A&IATA=LIS"
+header = {'Referer' : 'http://www.aeroportolisboa.pt/en/lis/flights-destinations/find-flights/real-time-arrivals'}
+r = requests.get(url = url, headers = header)
+data = r.json()
+
+
+date = date.today().day
+i = 0
+flight = data["flights"][0]
+while int(flight["day"].split('/')[0]) != date:     # While flight date doesn't match today's date
+    flight = data["flights"][i]                     # Advance a flight
+    i = i + 1
+
+number = flight["flightNumber"]
+time = flight["state"]["value"]
+
+
+if flight["state"]["label"] == "Cancelled":
+    out = f"Flight {number} was cancelled"
+elif flight["state"]["label"] == "Arrived":
+    out = f"Flight {number} arrived at {time}"
+elif flight["state"]["label"] == "Estimated":
+    out = f"Flight {number} is estimated to arrive at {time}"
+
+agi.set_variable("STR",out)
+
